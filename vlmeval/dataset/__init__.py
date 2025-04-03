@@ -56,6 +56,9 @@ from .video_dataset_config import *
 from ..smp import *
 from .Omnidocbench.omnidocbench import OmniDocBench
 from .moat import MOAT
+from .foodie_mivqa import Foodie_mivqa
+from .foodie_sivqa import Foodie_sivqa
+from .foodie_textqa import Foodie_textqa
 
 
 class ConcatDataset(ImageBaseDataset):
@@ -153,7 +156,7 @@ IMAGE_DATASET = [
     OlympiadBench, WildVision, MMMath, QSpatial, Dynamath, MMGenBench, VizWiz, 
     MMNIAH, CMMMU, VLRewardBench, WeMath, LogicVista, MMMUProDataset, 
     CreationMMBenchDataset, ImageShortQADataset, MMAlignBench, OmniDocBench, 
-    VLM2Bench, VMCBenchDataset, EMMADataset, MME_CoT, MOAT
+    VLM2Bench, VMCBenchDataset, EMMADataset, MME_CoT, MOAT, foodie_mivqa, foodie_sivqa
 ]
 
 
@@ -167,7 +170,7 @@ VIDEO_DATASET = [
 ]
 
 TEXT_DATASET = [
-    TextMCQDataset
+    TextMCQDataset, foodie_textqa
 ]
 
 CUSTOM_DATASET = [
